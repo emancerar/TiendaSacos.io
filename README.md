@@ -20,3 +20,10 @@ debo poder guardar la informacion del saco como:
 - precio
 - cantidad
 se debe poder ver la cantidad de sacos que hay en el inventario
+
+### Caso de uso:
+![Caso de uso](https://github.com/emancerar/TiendaSacos.io/blob/6b087e5a6d089b7836c1f8dbbd508126832890f3/Casos%20de%20uso.png)
+
+mermaid
+flowchart TB
+A((inicio))
