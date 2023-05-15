@@ -30,7 +30,7 @@ se debe poder ver la cantidad de sacos que hay en el inventario
 
 
 ### Seudocódigo:
-
+~~~
 Inicio
 	Real: IdSaco, Precio, Cantidad
 	Caracteres: Descri[50]
@@ -58,4 +58,4 @@ Inicio
 		Fin Si
 	Hasta Que Opc=1 O Opc=2
 Fin
-
+~~~
