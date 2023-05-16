@@ -27,9 +27,11 @@ se debe poder ver la cantidad de sacos que hay en el inventario
 
 ### Diagrama de Flujo:
 
-
+![Diagrama de Flujo](https://github.com/emancerar/TiendaSacos.io/blob/34f2dc20bd5e7bd2a04445a3b2c178796429f957/Diagrama%20de%20Flujo.png)
 
 ### Seudocódigo:
+~~~
+
 ~~~
 Inicio
 	Real: IdSaco, Precio, Cantidad
@@ -58,4 +60,50 @@ Inicio
 		Fin Si
 	Hasta Que Opc=1 O Opc=2
 Fin
+~~~
+
+### Código en Java:
+
+~~~
+import java.util.Scanner;
+public class Sacos
+{
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        String[] IdSacos = new String[50];
+        String[] Descripciones = new String[50];
+        double[] Precios = new double[50];
+        double[] Cantidades = new double[50];
+        
+        int NumeroSacos;
+        String IdSaco, Descripcion;
+        double Precio=0, Cantidad, valort=0;
+        System.out.println("Digite la cantidad de Sacos: ");
+        NumeroSacos = sc.nextInt();
+        for(int i = 0; i < NumeroSacos; i++){
+            System.out.println("Digite el ID del saco: ");
+            IdSaco = sc.next();
+            System.out.println("Digite la descripcion del saco ");
+            Descripcion = sc.next();
+            System.out.println("Digite el precio del saco: ");
+            Precio = sc.nextDouble();
+            System.out.println("Digite la cantidad de sacos: ");
+            Cantidad = sc.nextDouble();
+            
+            IdSacos[i] = IdSaco;
+            Descripciones[i] = Descripcion;
+            Precios[i] = Precio;
+            Cantidades[i] = Cantidad; 
+        }
+        for(int i = 0; i < NumeroSacos; i++){
+            valort = Precio + valort ;
+        }
+        
+        System.out.println("El valor total de los sacos ingresados es: " + valort);
+        
+        
+        }
+}
+
 ~~~
