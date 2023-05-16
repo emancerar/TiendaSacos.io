@@ -30,7 +30,6 @@ se debe poder ver la cantidad de sacos que hay en el inventario
 ![Diagrama de Flujo](https://github.com/emancerar/TiendaSacos.io/blob/34f2dc20bd5e7bd2a04445a3b2c178796429f957/Diagrama%20de%20Flujo.png)
 
 ### Seudocódigo:
-~~~
 
 ~~~
 Inicio
